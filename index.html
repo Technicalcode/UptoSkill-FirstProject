@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 130px;
+            padding:100px;
+            flex-wrap: wrap;
+        }
+        .cards>div{
+            max-width: 300px;
+        }
+        .cards>.card>img{
+            width: 100%;
+            aspect-ratio: 3/3;
+        }
+        .cards>.card>.text>h2{
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .cards>.card>.text>p{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .cards>.card>.text>button{
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        #para{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #073621;
+            padding: 100px 200px;
+        }
+        #para>.text>p{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        @media(max-width:800px){
+            #para{
+                padding: 50px;
+            }
+        }
+
+
+       
+
+
+
+        .WORK>h2{
+          text-align: center;
+          font-size: 3.0em;
+          padding: 10px;
+        }
+
+        .cover{
+            position: relative;
+            width: 100%;
+            height: 50%;
+ 
+        }
+        
+        .scroll-images{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        .child{
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            border: 1px solid white;
+            overflow: hidden;
+
+        }
+        .scroll-images::-webkit-scrollbar{
+            -webkit-appearance: none;
+        }
+        .child-img{
+            width: 100%;
+            height: 100%;
+        }
+        .icon{
+            color: white;
+            /* background-color: black; */
+            align-items: center;
+            font-size: 50px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        
+        }
+        .right-icon{
+            position: absolute;
+            right: 10px;
+            top: 40%;
+        }
+        .left-icon{
+            position: absolute;
+            left: 20px;
+            top: 40%;
+            z-index: 1;
+        }
+        .icon:hover{
+            color: yellow;
+        }
+        /* #rightt.icon{
+            top: 20%;
+            left: 10px;
+        }*/
+        /* #leftt.icon{
+           margin-top: 100px;
+        }  */
+
+
+
+
+
+        .contact{
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+            padding: 40px 100px;
+            flex-wrap: wrap; /*  image ko wrap ke liye       */
+        }
+        .contact>.text{
+            padding:30px 0;
+        }
+        .contact>.text>h2{
+            bottom: 10px;
+        }
+
+        .contact>.text>p{
+          
+             margin-bottom: 20px; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" name="" id="check">
+        <div class="sideBar">
+            <label for="check">
+                <span class="fa-closee">X</span>
+            </label>
+            <ul class="menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="social">
+                <a href=""><i class="fa fa-facebook-square"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div>
+            <h1>HUETTE</h1>
+        </div>
+        <label for="check">
+            <i class="fa fa-bars"></i>
+                
+            </label>
+        <div class="menubar">
+            <ul class="menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="social">
+                <a href=""><i class="fa fa-facebook-square"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+
+        
+    </nav>
+
+    <section id="hero">
+        
+        <img src="./images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="">
+        <div class="overlay">
+            
+        </div>
+        <div class="heroText">
+            <h2>The Space of Your Dream is Possible</h2>
+            <br>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolore<br>band the game ipsum dolor sit amet..
+            </p>
+            <br>
+            <button>
+                Book A Free Estimate
+            </button>
+        </div>
+    </section> 
+
+
+
+
+
+
+    <!------------------- About us  ------------------>
+    <section id="aboutUs">
+        <div class="text">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorem praesentium doloribus quae iure sed, molestias consectetur hic ad quia voluptas deleniti iusto veritatis magnam doloremque quibusdam animi quam perferendis.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="image">
+            <img src="./images/profile-pic (1).png" alt="">
+        </div>
+    </section>
+
+
+
+     
+
+    <section class="cards">
+        <div class="card">
+            <img src="./images/pexels-chanwalrus-941861 (1).jpg" alt="">
+            <div class="text">
+                <h2>Restaurants</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ea dignissimos nihil neque voluptatem </p>
+                <button>learn More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/jared-rice-PibraWHb4h8-unsplash.jpg" alt="">
+            <div class="text">
+                <h2>Homes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ea dignissimos nihil neque voluptatem </p>
+                <button>learn More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/francesca-tosolini-hCU4fimRW-c-unsplash.jpg" alt="">
+            <div class="text">
+                <h2>Vacation rentals</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ea dignissimos nihil neque voluptatem </p>
+                <button>learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="para">
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a nostrum rerum temporibus nobis repudiandae delectus labore, sit molestias, nam voluptate cum dicta sapiente facilis nesciunt consequuntur ex recusandae tenetur assumenda cumque ducimus dolorum nihil officia illum. Ea aspernatur molestiae beatae, aliquam saepe eum maxime pariatur incidunt illo laboriosam at!
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+<!------------ scroller ------------->
+<section>
+    <div class="main-scroll-div">
+        
+        
+        <div class="WORK">
+            <h2>OUR WORK</h2>
+        </div>
+        <div class="cover">
+            <div class="left-icon   ">
+                <button class="icon" onclick="scrolll()"><i class="fa fa-angle-left"></i></button>
+                
+            </div>
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="./images/austin-distel-gUIJ0YszPig-unsplash.jpg" alt="images"></div>
+                <div class="child"><img class="child-img" src="./images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="images"></div>
+                <div class="child"><img class="child-img" src="./images/francesca-tosolini-hCU4fimRW-c-unsplash.jpg" alt="images"></div>
+                <div class="child"><img class="child-img" src="./images/austin-distel-gUIJ0YszPig-unsplash.jpg" alt="images"></div>
+                <div class="child"><img class="child-img" src="./images/austin-distel-gUIJ0YszPig-unsplash.jpg" alt="images"></div>
+                <div class="child"><img class="child-img" src="./images/austin-distel-gUIJ0YszPig-unsplash.jpg" alt="images"></div>
+            </div>
+            <div class="right-icon">
+                <button  class="icon" onclick="scrollr()"><i class="fa fa-angle-right"></i></button>
+    
+            </div>
+        </div>
+        
+
+    </div>
+</section>
+
+
+
+
+
+
+    <!---------- contact us ------------>
+    <section class="contact">
+        <div class="text">
+            <h2>Our Location</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+            <p><b>Call Us at: </b>+91xxxxxxxxx</p>
+            <p><b>Email Us at : </b>xxxx@gmail.com</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110471.29917852697!2d78.1882074006723!3d30.087653047143586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1716963827067!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    
+</body>
+
+
+<script>
+    function scrolll(){
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(350,0)
+    }
+    function scrollr(){
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(-350,0)
+    }
+
+</script>
+
+</html>
